@@ -12,5 +12,12 @@ export default defineConfig({
       'Cross-Origin-Embedder-Policy': 'unsafe-none',
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        assetFileNames: 'assets/[name][extname]', // disables hashing
+      }
+    }
+  },
   
 });
